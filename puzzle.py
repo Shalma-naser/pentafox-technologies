@@ -1,13 +1,13 @@
 def findPairs(lst, i): 
-    res = []
+    out = []
     while lst:
         num = lst.pop()
         diff = i - num
         if diff in lst:
-            res.append((diff, num))
-    if res == []:
+            out.append((diff, num))
+    if out == []:
         print("No Pairs found")
-    return res
+    return out
 lst = list(map(int,input("\nEnter the list : ").strip().split()))
 i = int(input("Enter the sum : "))
 print(findPairs(lst, i))
