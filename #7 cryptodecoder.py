@@ -1,8 +1,8 @@
 alpha="abcdefghijklmnopqrstuvwxyz"
 list=[]
 list=list(map(int,input().split(",")))
-result = []
+output = []
 for i in list:
     a = alpha[i-1]
-    result.append(a)
-print(*result)
+    output.append(a)
+print(*output)
